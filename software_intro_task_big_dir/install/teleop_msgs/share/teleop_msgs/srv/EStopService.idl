@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from teleop_msgs/srv/EStopService.srv
+// generated code does not contain a copyright notice
+
+
+module teleop_msgs {
+  module srv {
+    struct EStopService_Request {
+      double throttle;
+
+      double steering;
+
+      double brakes;
+
+      boolean set_estop;
+    };
+    struct EStopService_Response {
+      boolean estop_state;
+    };
+  };
+};

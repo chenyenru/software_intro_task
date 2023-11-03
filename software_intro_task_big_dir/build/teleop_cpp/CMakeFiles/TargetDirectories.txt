@@ -1,0 +1,12 @@
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/install/strip.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/install/local.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/install.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/list_install_components.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/edit_cache.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/test.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/teleop_cpp_node.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/teleop_cpp_node_exe.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/teleop_cpp.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/teleop_cpp_uninstall.dir
+/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp/CMakeFiles/uninstall.dir

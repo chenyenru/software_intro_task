@@ -1,0 +1,8 @@
+In file included from [01m[K/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_typesupport_introspection_cpp/teleop_msgs/msg/detail/vehicle_control_data__type_support.cpp:12[m[K:
+[01m[K/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_cpp/teleop_msgs/msg/detail/vehicle_control_data__struct.hpp:19:10:[m[K [01;31m[Kfatal error: [m[Kteleop_msgs/msg/detail/header__struct.hpp: No such file or directory
+   19 | #include [01;31m[K"teleop_msgs/msg/detail/header__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/teleop_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:85: CMakeFiles/teleop_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/teleop_msgs/msg/detail/vehicle_control_data__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:287: CMakeFiles/teleop_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

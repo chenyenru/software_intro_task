@@ -1,0 +1,23 @@
+[0.652s] Invoking command in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_py': AMENT_PREFIX_PATH=/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs LD_LIBRARY_PATH=/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/software_intro_task_big_dir/build/teleop_py/prefix_override:/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages:/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_py build --build-base /home/ubuntu/software_intro_task_big_dir/build/teleop_py/build install --record /home/ubuntu/software_intro_task_big_dir/build/teleop_py/install.log --single-version-externally-managed
+[0.798s] running egg_info
+[0.799s] writing ../../build/teleop_py/teleop_py.egg-info/PKG-INFO
+[0.800s] writing dependency_links to ../../build/teleop_py/teleop_py.egg-info/dependency_links.txt
+[0.801s] writing entry points to ../../build/teleop_py/teleop_py.egg-info/entry_points.txt
+[0.802s] writing requirements to ../../build/teleop_py/teleop_py.egg-info/requires.txt
+[0.803s] writing top-level names to ../../build/teleop_py/teleop_py.egg-info/top_level.txt
+[0.833s] reading manifest file '../../build/teleop_py/teleop_py.egg-info/SOURCES.txt'
+[0.834s] writing manifest file '../../build/teleop_py/teleop_py.egg-info/SOURCES.txt'
+[0.835s] running build
+[0.835s] running build_py
+[0.836s] running install
+[0.837s] running install_lib
+[0.838s] byte-compiling /home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages/teleop_py/teleop_py_node.py to teleop_py_node.cpython-38.pyc
+[0.841s] running install_data
+[0.841s] running install_egg_info
+[0.843s] removing '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages/teleop_py-1.0.0-py3.8.egg-info' (and everything under it)
+[0.850s] Copying ../../build/teleop_py/teleop_py.egg-info to /home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages/teleop_py-1.0.0-py3.8.egg-info
+[0.853s] running install_scripts
+[0.868s] Installing service script to /home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/teleop_py
+[0.869s] Installing teleop_py_node_exe script to /home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/teleop_py
+[0.871s] writing list of installed files to '/home/ubuntu/software_intro_task_big_dir/build/teleop_py/install.log'
+[0.886s] Invoked command in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_py' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs LD_LIBRARY_PATH=/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/software_intro_task_big_dir/build/teleop_py/prefix_override:/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages:/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_py build --build-base /home/ubuntu/software_intro_task_big_dir/build/teleop_py/build install --record /home/ubuntu/software_intro_task_big_dir/build/teleop_py/install.log --single-version-externally-managed

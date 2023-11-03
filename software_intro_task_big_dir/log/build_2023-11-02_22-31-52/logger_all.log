@@ -1,0 +1,282 @@
+[1.593s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.593s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb376e910>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=1, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb376e910>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb37740d0>)
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.662s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.663s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/software_intro_task_big_dir'
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extensions ['ignore', 'ignore_ament_install']
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'ignore'
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'ignore_ament_install'
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extensions ['colcon_pkg']
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'colcon_pkg'
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extensions ['colcon_meta']
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'colcon_meta'
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extensions ['ros']
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'ros'
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extensions ['cmake', 'python']
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'cmake'
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'python'
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extensions ['python_setup_py']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task) by extension 'python_setup_py'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extensions ['ignore', 'ignore_ament_install']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extension 'ignore'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extension 'ignore_ament_install'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extensions ['colcon_pkg']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extension 'colcon_pkg'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extensions ['colcon_meta']
+[1.679s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extension 'colcon_meta'
+[1.679s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extensions ['ros']
+[1.679s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_cpp) by extension 'ros'
+[1.681s] DEBUG:colcon.colcon_core.package_identification:Package 'software_intro_task/teleop_cpp' with type 'ros.ament_cmake' and name 'teleop_cpp'
+[1.681s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extension 'ignore'
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extension 'ignore_ament_install'
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extensions ['colcon_pkg']
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extension 'colcon_pkg'
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extensions ['colcon_meta']
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extension 'colcon_meta'
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extensions ['ros']
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_msgs) by extension 'ros'
+[1.683s] DEBUG:colcon.colcon_core.package_identification:Package 'software_intro_task/teleop_msgs' with type 'ros.ament_cmake' and name 'teleop_msgs'
+[1.683s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extensions ['ignore', 'ignore_ament_install']
+[1.683s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extension 'ignore'
+[1.684s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extension 'ignore_ament_install'
+[1.684s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extensions ['colcon_pkg']
+[1.684s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extension 'colcon_pkg'
+[1.684s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extensions ['colcon_meta']
+[1.684s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extension 'colcon_meta'
+[1.684s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extensions ['ros']
+[1.684s] Level 1:colcon.colcon_core.package_identification:_identify(software_intro_task/teleop_py) by extension 'ros'
+[1.685s] DEBUG:colcon.colcon_core.package_identification:Package 'software_intro_task/teleop_py' with type 'ros.ament_python' and name 'teleop_py'
+[1.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.844s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/ubuntu/software_intro_task/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[1.845s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ubuntu/software_intro_task/install/teleop_py' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.869s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 173 installed packages in /opt/ros/galactic
+[1.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'cmake_args' from command line to 'None'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'cmake_target' from command line to 'None'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[1.994s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[1.995s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[1.995s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[1.995s] Level 5:colcon.colcon_core.verb:set package 'teleop_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.995s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp', 'merge_install': False, 'path': '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_cpp', 'symlink_install': False, 'test_result_base': None}
+[2.019s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'cmake_args' from command line to 'None'
+[2.019s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'cmake_target' from command line to 'None'
+[2.019s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.019s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.020s] Level 5:colcon.colcon_core.verb:set package 'teleop_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.020s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs', 'merge_install': False, 'path': '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.040s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'cmake_args' from command line to 'None'
+[2.040s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'cmake_target' from command line to 'None'
+[2.041s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.041s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'cmake_clean_cache' from command line to 'False'
+[2.041s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'cmake_clean_first' from command line to 'False'
+[2.041s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'cmake_force_configure' from command line to 'False'
+[2.041s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'ament_cmake_args' from command line to 'None'
+[2.041s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'catkin_cmake_args' from command line to 'None'
+[2.041s] Level 5:colcon.colcon_core.verb:set package 'teleop_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.041s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/software_intro_task_big_dir/build/teleop_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/software_intro_task_big_dir/install/teleop_py', 'merge_install': False, 'path': '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_py', 'symlink_install': False, 'test_result_base': None}
+[2.068s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.089s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.089s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_cpp' with build type 'ament_cmake'
+[2.089s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_cpp'
+[2.117s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.117s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/software_intro_task_big_dir/build/teleop_cpp -- -j1 -l1
+[2.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/software_intro_task_big_dir/build/teleop_cpp -- -j1 -l1
+[2.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/software_intro_task_big_dir/build/teleop_cpp
+[2.349s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_cpp)
+[2.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_cpp' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/software_intro_task_big_dir/build/teleop_cpp
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp' for CMake module files
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp' for CMake config files
+[2.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_cpp', 'cmake_prefix_path')
+[2.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/cmake_prefix_path.ps1'
+[2.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/cmake_prefix_path.dsv'
+[2.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/cmake_prefix_path.sh'
+[2.405s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/lib'
+[2.405s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_cpp', 'ld_library_path_lib')
+[2.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/ld_library_path_lib.ps1'
+[2.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/ld_library_path_lib.dsv'
+[2.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/ld_library_path_lib.sh'
+[2.430s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/bin'
+[2.430s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/lib/pkgconfig/teleop_cpp.pc'
+[2.430s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/lib/python3.8/site-packages'
+[2.430s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/bin'
+[2.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.ps1'
+[2.452s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.dsv'
+[2.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.sh'
+[2.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.bash'
+[2.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.zsh'
+[2.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/colcon-core/packages/teleop_cpp)
+[2.502s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_cpp)
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp' for CMake module files
+[2.533s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp' for CMake config files
+[2.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_cpp', 'cmake_prefix_path')
+[2.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/cmake_prefix_path.ps1'
+[2.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/cmake_prefix_path.dsv'
+[2.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/cmake_prefix_path.sh'
+[2.557s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/lib'
+[2.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_cpp', 'ld_library_path_lib')
+[2.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/ld_library_path_lib.ps1'
+[2.579s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/ld_library_path_lib.dsv'
+[2.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/hook/ld_library_path_lib.sh'
+[2.580s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/bin'
+[2.580s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/lib/pkgconfig/teleop_cpp.pc'
+[2.580s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/lib/python3.8/site-packages'
+[2.580s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/bin'
+[2.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.ps1'
+[2.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.dsv'
+[2.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.sh'
+[2.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.bash'
+[2.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/teleop_cpp/package.zsh'
+[2.606s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/software_intro_task_big_dir/install/teleop_cpp/share/colcon-core/packages/teleop_cpp)
+[2.608s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs' with build type 'ament_cmake'
+[2.608s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs'
+[2.632s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.632s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs -- -j1 -l1
+[2.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs -- -j1 -l1
+[2.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs
+[3.084s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_msgs)
+[3.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/software_intro_task/install/teleop_py:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs
+[3.128s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs' for CMake module files
+[3.129s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs' for CMake config files
+[3.129s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_msgs', 'cmake_prefix_path')
+[3.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/cmake_prefix_path.ps1'
+[3.152s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/cmake_prefix_path.dsv'
+[3.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/cmake_prefix_path.sh'
+[3.153s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib'
+[3.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_msgs', 'ld_library_path_lib')
+[3.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/ld_library_path_lib.ps1'
+[3.177s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/ld_library_path_lib.dsv'
+[3.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/ld_library_path_lib.sh'
+[3.179s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/bin'
+[3.180s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib/pkgconfig/teleop_msgs.pc'
+[3.180s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib/python3.8/site-packages'
+[3.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_msgs', 'pythonpath')
+[3.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/pythonpath.ps1'
+[3.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/pythonpath.dsv'
+[3.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/pythonpath.sh'
+[3.280s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/bin'
+[3.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.ps1'
+[3.312s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.dsv'
+[3.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.sh'
+[3.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.bash'
+[3.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.zsh'
+[3.316s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/colcon-core/packages/teleop_msgs)
+[3.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_msgs)
+[3.414s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs' for CMake module files
+[3.415s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs' for CMake config files
+[3.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_msgs', 'cmake_prefix_path')
+[3.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/cmake_prefix_path.ps1'
+[3.444s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/cmake_prefix_path.dsv'
+[3.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/cmake_prefix_path.sh'
+[3.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib'
+[3.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_msgs', 'ld_library_path_lib')
+[3.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/ld_library_path_lib.ps1'
+[3.471s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/ld_library_path_lib.dsv'
+[3.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/ld_library_path_lib.sh'
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/bin'
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib/pkgconfig/teleop_msgs.pc'
+[3.473s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/lib/python3.8/site-packages'
+[3.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_msgs', 'pythonpath')
+[3.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/pythonpath.ps1'
+[3.498s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/pythonpath.dsv'
+[3.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/hook/pythonpath.sh'
+[3.500s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/bin'
+[3.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.ps1'
+[3.528s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.dsv'
+[3.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.sh'
+[3.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.bash'
+[3.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/teleop_msgs/package.zsh'
+[3.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs/share/colcon-core/packages/teleop_msgs)
+[3.534s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_py' with build type 'ament_python'
+[3.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_py', 'ament_prefix_path')
+[3.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/hook/ament_prefix_path.ps1'
+[3.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/hook/ament_prefix_path.dsv'
+[3.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/hook/ament_prefix_path.sh'
+[3.601s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.602s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.917s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_py'
+[3.961s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.961s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_py': PYTHONPATH=/home/ubuntu/software_intro_task_big_dir/build/teleop_py/prefix_override:/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_py build --build-base /home/ubuntu/software_intro_task_big_dir/build/teleop_py/build install --record /home/ubuntu/software_intro_task_big_dir/build/teleop_py/install.log --single-version-externally-managed
+[4.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_py' returned '0': PYTHONPATH=/home/ubuntu/software_intro_task_big_dir/build/teleop_py/prefix_override:/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_py build --build-base /home/ubuntu/software_intro_task_big_dir/build/teleop_py/build install --record /home/ubuntu/software_intro_task_big_dir/build/teleop_py/install.log --single-version-externally-managed
+[4.994s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_py' for CMake module files
+[4.995s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_py' for CMake config files
+[4.995s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib'
+[4.996s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/bin'
+[4.996s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/pkgconfig/teleop_py.pc'
+[4.996s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/lib/python3.8/site-packages'
+[4.996s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_py', 'pythonpath')
+[5.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/hook/pythonpath.ps1'
+[5.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/hook/pythonpath.dsv'
+[5.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/hook/pythonpath.sh'
+[5.027s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/bin'
+[5.027s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_py)
+[5.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/package.ps1'
+[5.058s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/package.dsv'
+[5.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/package.sh'
+[5.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/package.bash'
+[5.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/teleop_py/package.zsh'
+[5.062s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/software_intro_task_big_dir/install/teleop_py/share/colcon-core/packages/teleop_py)
+[5.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.064s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.065s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.065s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.100s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.100s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.101s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.101s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.103s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[5.103s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.127s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/software_intro_task_big_dir/install/local_setup.ps1'
+[5.128s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/software_intro_task_big_dir/install/_local_setup_util_ps1.py'
+[5.130s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/software_intro_task_big_dir/install/setup.ps1'
+[5.153s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/software_intro_task_big_dir/install/local_setup.sh'
+[5.154s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/software_intro_task_big_dir/install/_local_setup_util_sh.py'
+[5.155s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/software_intro_task_big_dir/install/setup.sh'
+[5.178s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/software_intro_task_big_dir/install/local_setup.bash'
+[5.179s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/software_intro_task_big_dir/install/setup.bash'
+[5.208s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/software_intro_task_big_dir/install/local_setup.zsh'
+[5.210s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/software_intro_task_big_dir/install/setup.zsh'

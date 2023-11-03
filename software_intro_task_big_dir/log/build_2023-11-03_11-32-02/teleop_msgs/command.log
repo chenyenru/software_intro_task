@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs -- -j1 -l1
+Invoked command in '/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs -- -j1 -l1
