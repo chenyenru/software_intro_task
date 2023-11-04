@@ -66,18 +66,18 @@
 [ 35%] [32mBuilding CXX object CMakeFiles/teleop_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/teleop_msgs/srv/detail/e_stop_service__type_support.cpp.o[0m
 [ 38%] [32mBuilding CXX object CMakeFiles/teleop_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/teleop_msgs/msg/detail/dds_fastrtps/vehicle_control_data__type_support.cpp.o[0m
 [ 41%] [32mBuilding CXX object CMakeFiles/teleop_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/teleop_msgs/srv/detail/dds_fastrtps/e_stop_service__type_support.cpp.o[0m
-[ 43%] [32mBuilding CXX object CMakeFiles/teleop_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/teleop_msgs/msg/vehicle_control_data__type_support.cpp.o[0m
 [ 46%] [32mBuilding CXX object CMakeFiles/teleop_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/teleop_msgs/srv/e_stop_service__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/teleop_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/teleop_msgs/msg/vehicle_control_data__type_support.cpp.o[0m
 [ 48%] [32m[1mLinking CXX shared library libteleop_msgs__rosidl_typesupport_c.so[0m
 [ 51%] [32mBuilding C object CMakeFiles/teleop_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/teleop_msgs/msg/detail/vehicle_control_data__type_support.c.o[0m
 [ 53%] [32mBuilding C object CMakeFiles/teleop_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/teleop_msgs/srv/detail/e_stop_service__type_support.c.o[0m
 [ 56%] [32m[1mLinking C shared library libteleop_msgs__rosidl_typesupport_introspection_c.so[0m
 [ 56%] Built target teleop_msgs__rosidl_typesupport_c
 [ 56%] Built target teleop_msgs__rosidl_typesupport_introspection_c
-[ 58%] [32m[1mLinking CXX shared library libteleop_msgs__rosidl_typesupport_introspection_cpp.so[0m
-[ 61%] [32m[1mLinking CXX shared library libteleop_msgs__rosidl_typesupport_cpp.so[0m
+[ 58%] [32m[1mLinking CXX shared library libteleop_msgs__rosidl_typesupport_cpp.so[0m
+[ 58%] Built target teleop_msgs__rosidl_typesupport_cpp
+[ 61%] [32m[1mLinking CXX shared library libteleop_msgs__rosidl_typesupport_introspection_cpp.so[0m
 [ 61%] Built target teleop_msgs__rosidl_typesupport_introspection_cpp
-[ 61%] Built target teleop_msgs__rosidl_typesupport_cpp
 [ 64%] [32m[1mLinking CXX shared library libteleop_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
 [ 64%] Built target teleop_msgs__rosidl_typesupport_fastrtps_cpp
 [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
@@ -98,8 +98,8 @@
 [ 97%] [32m[1mLinking C shared library rosidl_generator_py/teleop_msgs/teleop_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
 [ 97%] [32m[1mLinking C shared library rosidl_generator_py/teleop_msgs/teleop_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
 [100%] [32m[1mLinking CXX shared library rosidl_generator_py/teleop_msgs/teleop_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
-[100%] Built target teleop_msgs__rosidl_typesupport_c__pyext
 [100%] Built target teleop_msgs__rosidl_typesupport_introspection_c__pyext
+[100%] Built target teleop_msgs__rosidl_typesupport_c__pyext
 [100%] Built target teleop_msgs__rosidl_typesupport_fastrtps_c__pyext
 -- Install configuration: ""
 -- Installing: /home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_msgs/share/ament_index/resource_index/rosidl_interfaces/teleop_msgs

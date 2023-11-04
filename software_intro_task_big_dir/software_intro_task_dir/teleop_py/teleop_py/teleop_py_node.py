@@ -43,16 +43,16 @@ class TeleopPy(Node):
         
     
     def listener_callback(self, msg):
-        self.get_logger().info('Axes: "%s"' % msg.axes)
-        self.get_logger().info('Buttons: "%s"' % msg.buttons)
+        # self.get_logger().info('Axes: "%s"' % msg.axes)
+        # self.get_logger().info('Buttons: "%s"' % msg.buttons)
         
         vcd = VehicleControlData()
         
-        # LEFTX
-        vcd.throttle = msg.axes[0]
+        # TRIGGERLEFT
+        vcd.throttle = msg.axes[4]
 
-        # LEFTY
-        vcd.steering = msg.axes[1]
+        # TRIGGERRIGHT
+        vcd.steering = msg.axes[5]
         
         # RightX
         vcd.brake = msg.axes[2]
@@ -63,8 +63,8 @@ class TeleopPy(Node):
         else:
             vcd.estop = False
 
-        self.get_logger().info('LEFTX: "%d"' % msg.axes[0])
-        self.get_logger().info('LEFTY: "%d"' % msg.axes[1])
+        # self.get_logger().info('LEFTX: "%d"' % msg.axes[0])
+        # self.get_logger().info('LEFTY: "%d"' % msg.axes[1])
         # self.get_logger().info('I heard "%f"' % msg.buttons[0])
         # self.get_logger().info('I heard "%f"' % msg.buttons[1])
         
@@ -76,6 +76,7 @@ class TeleopPy(Node):
             vcd.throttle = 0.0
             vcd.steering = 0.0
         
+        self.get_logger().info('Throttle: "%f"' % vcd.throttle)
         self.get_logger().info('Steering: "%f"' % vcd.steering)
         self.get_logger().info('Brake: "%f"' % vcd.brake)
         
