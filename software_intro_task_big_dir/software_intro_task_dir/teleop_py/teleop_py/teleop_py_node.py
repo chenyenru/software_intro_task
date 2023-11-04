@@ -24,18 +24,22 @@ from teleop_msgs.srv import EStopService
 class TeleopPy(Node):
     def __init__(self):
         super().__init__("teleop_py_node")
-        self.subsription = self.create_subscription(
+        self.sub_joystick = self.create_subscription(
             Joy,
             'joy',
             self.listener_callback,
             10
+        )
+
+        self.sub_estop = self.create_subscription(
+
         )
         self.publisher_ = self.create_publisher(
             VehicleControlData, 
             'output_teleop',
             10)
 
-        self.cli = self.create_client(EStopService, "estop_service")
+        self.cli = self.create_client(EStopService, "estop")
         self.req = EStopService.Request()
         
 

@@ -7,7 +7,7 @@ class TeleopPy_Service(Node):
 
     def __init__(self):
         super().__init__("teleop_py_service")
-        self.srv = self.create_service(EStopService, 'estop_service', self.estop_service)
+        self.srv = self.create_service(EStopService, 'estop', self.estop_service)
 
     def estop_service(self, request, response):
         if (request.set_estop):
