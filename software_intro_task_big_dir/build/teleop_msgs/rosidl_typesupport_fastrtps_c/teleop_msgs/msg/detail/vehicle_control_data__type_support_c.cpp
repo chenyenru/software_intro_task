@@ -158,7 +158,6 @@ static uint32_t _VehicleControlData__get_serialized_size(const void * untyped_ro
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_teleop_msgs
 size_t max_serialized_size_teleop_msgs__msg__VehicleControlData(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment)
 {
   size_t initial_alignment = current_alignment;
@@ -167,9 +166,7 @@ size_t max_serialized_size_teleop_msgs__msg__VehicleControlData(
   const size_t wchar_size = 4;
   (void)padding;
   (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
+  (void)full_bounded;
 
   // member: throttle
   {
@@ -202,19 +199,10 @@ size_t max_serialized_size_teleop_msgs__msg__VehicleControlData(
   return current_alignment - initial_alignment;
 }
 
-static size_t _VehicleControlData__max_serialized_size(char & bounds_info)
+static size_t _VehicleControlData__max_serialized_size(bool & full_bounded)
 {
-  bool full_bounded;
-  bool is_plain;
-  size_t ret_val;
-
-  ret_val = max_serialized_size_teleop_msgs__msg__VehicleControlData(
-    full_bounded, is_plain, 0);
-
-  bounds_info =
-    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
-    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
-  return ret_val;
+  return max_serialized_size_teleop_msgs__msg__VehicleControlData(
+    full_bounded, 0);
 }
 
 

@@ -23,7 +23,7 @@ class TeleopPy_Service(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    minimal_service = TeleopPy_Service()
+    teleop_py_service = TeleopPy_Service()
 
     rclpy.spin(teleop_py_service)
 

@@ -5,10 +5,6 @@
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
-
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -130,7 +126,7 @@ class VehicleControlData(metaclass=Metaclass_VehicleControlData):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def throttle(self):
         """Message field 'throttle'."""
         return self._throttle
@@ -141,11 +137,9 @@ class VehicleControlData(metaclass=Metaclass_VehicleControlData):
             assert \
                 isinstance(value, float), \
                 "The 'throttle' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'throttle' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._throttle = value
 
-    @builtins.property
+    @property
     def steering(self):
         """Message field 'steering'."""
         return self._steering
@@ -156,11 +150,9 @@ class VehicleControlData(metaclass=Metaclass_VehicleControlData):
             assert \
                 isinstance(value, float), \
                 "The 'steering' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'steering' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._steering = value
 
-    @builtins.property
+    @property
     def brake(self):
         """Message field 'brake'."""
         return self._brake
@@ -171,11 +163,9 @@ class VehicleControlData(metaclass=Metaclass_VehicleControlData):
             assert \
                 isinstance(value, float), \
                 "The 'brake' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'brake' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._brake = value
 
-    @builtins.property
+    @property
     def estop(self):
         """Message field 'estop'."""
         return self._estop

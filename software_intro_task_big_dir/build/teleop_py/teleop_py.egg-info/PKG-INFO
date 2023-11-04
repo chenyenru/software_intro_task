@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 1.2
 Name: teleop-py
 Version: 1.0.0
 Summary: Python3 Package containing code to convert joystick messages and add ESTOP capability
@@ -6,7 +6,5 @@ Home-page: UNKNOWN
 Maintainer: sisaha
 Maintainer-email: sisahawork@gmail.com
 License: Apache 2.0
+Description: UNKNOWN
 Platform: UNKNOWN
-
-UNKNOWN
-

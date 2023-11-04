@@ -4,8 +4,8 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "teleop_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 #include "teleop_msgs/srv/detail/e_stop_service__struct.h"
-#include "teleop_msgs/srv/detail/e_stop_service__type_support.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -85,6 +85,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_teleop_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, teleop_msgs, srv, EStopService_Request)() {
   return &::teleop_msgs::srv::rosidl_typesupport_c::EStopService_Request_message_type_support_handle;
@@ -99,9 +100,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, teleop_m
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "teleop_msgs/srv/detail/e_stop_service__struct.h"
+// #include "teleop_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "teleop_msgs/srv/detail/e_stop_service__type_support.h"
+// #include "teleop_msgs/srv/detail/e_stop_service__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -186,6 +187,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_teleop_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, teleop_msgs, srv, EStopService_Response)() {
   return &::teleop_msgs::srv::rosidl_typesupport_c::EStopService_Response_message_type_support_handle;
@@ -199,7 +201,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, teleop_m
 // #include "cstddef"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
-// #include "teleop_msgs/srv/detail/e_stop_service__type_support.h"
+// #include "teleop_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/service_type_support_dispatch.h"
@@ -281,6 +283,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_teleop_msgs
 const rosidl_service_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, teleop_msgs, srv, EStopService)() {
   return &::teleop_msgs::srv::rosidl_typesupport_c::EStopService_service_type_support_handle;

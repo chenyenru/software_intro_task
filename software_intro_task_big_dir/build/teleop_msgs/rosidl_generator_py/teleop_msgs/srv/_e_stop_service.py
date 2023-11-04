@@ -5,8 +5,6 @@
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -110,7 +108,7 @@ class EStopService_Request(metaclass=Metaclass_EStopService_Request):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def set_estop(self):
         """Message field 'set_estop'."""
         return self._set_estop
@@ -125,9 +123,6 @@ class EStopService_Request(metaclass=Metaclass_EStopService_Request):
 
 
 # Import statements for member types
-
-# already imported above
-# import builtins
 
 # already imported above
 # import rosidl_parser.definition
@@ -233,7 +228,7 @@ class EStopService_Response(metaclass=Metaclass_EStopService_Response):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
+    @property
     def estop_state(self):
         """Message field 'estop_state'."""
         return self._estop_state

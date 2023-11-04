@@ -1,7 +1,7 @@
 {
   "package_name": "teleop_msgs",
   "non_idl_tuples": [
-    "/home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/software_intro_task_dir/teleop_msgs:msg/VehicleControlData.msg",
-    "/home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/software_intro_task_dir/teleop_msgs:srv/EStopService.srv"
+    "/home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/software_intro_task_dir/teleop_msgs:msg/VehicleControlData.msg",
+    "/home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/software_intro_task_dir/teleop_msgs:srv/EStopService.srv"
   ]
 }

@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /opt/cmake-install/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /opt/cmake-install/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/software_intro_task_dir/teleop_msgs
+CMAKE_SOURCE_DIR = /home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/software_intro_task_dir/teleop_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs
+CMAKE_BINARY_DIR = /home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/triton-ai/Documents/software_intro_task/software_intro_
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+	/opt/cmake-install/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/cmake-install/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/cmake-install/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -107,44 +107,44 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/opt/cmake-install/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/opt/cmake-install/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/cmake-install/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/opt/cmake-install/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/cmake-install/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/opt/cmake-install/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles /home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tritonai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -237,19 +237,6 @@ teleop_msgs__rosidl_typesupport_fastrtps_c/fast:
 .PHONY : teleop_msgs__rosidl_typesupport_fastrtps_c/fast
 
 #=============================================================================
-# Target rules for targets named teleop_msgs__cpp
-
-# Build rule for target.
-teleop_msgs__cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_msgs__cpp
-.PHONY : teleop_msgs__cpp
-
-# fast build rule for target.
-teleop_msgs__cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__cpp.dir/build.make CMakeFiles/teleop_msgs__cpp.dir/build
-.PHONY : teleop_msgs__cpp/fast
-
-#=============================================================================
 # Target rules for targets named teleop_msgs__rosidl_typesupport_fastrtps_cpp
 
 # Build rule for target.
@@ -289,6 +276,19 @@ teleop_msgs__rosidl_typesupport_c/fast:
 .PHONY : teleop_msgs__rosidl_typesupport_c/fast
 
 #=============================================================================
+# Target rules for targets named teleop_msgs__cpp
+
+# Build rule for target.
+teleop_msgs__cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_msgs__cpp
+.PHONY : teleop_msgs__cpp
+
+# fast build rule for target.
+teleop_msgs__cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__cpp.dir/build.make CMakeFiles/teleop_msgs__cpp.dir/build
+.PHONY : teleop_msgs__cpp/fast
+
+#=============================================================================
 # Target rules for targets named teleop_msgs__rosidl_typesupport_introspection_cpp
 
 # Build rule for target.
@@ -315,43 +315,17 @@ teleop_msgs__rosidl_typesupport_cpp/fast:
 .PHONY : teleop_msgs__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_teleop_msgs
+# Target rules for targets named teleop_msgs__python
 
 # Build rule for target.
-ament_cmake_python_copy_teleop_msgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_teleop_msgs
-.PHONY : ament_cmake_python_copy_teleop_msgs
+teleop_msgs__python: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_msgs__python
+.PHONY : teleop_msgs__python
 
 # fast build rule for target.
-ament_cmake_python_copy_teleop_msgs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_teleop_msgs.dir/build.make CMakeFiles/ament_cmake_python_copy_teleop_msgs.dir/build
-.PHONY : ament_cmake_python_copy_teleop_msgs/fast
-
-#=============================================================================
-# Target rules for targets named ament_cmake_python_build_teleop_msgs_egg
-
-# Build rule for target.
-ament_cmake_python_build_teleop_msgs_egg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_teleop_msgs_egg
-.PHONY : ament_cmake_python_build_teleop_msgs_egg
-
-# fast build rule for target.
-ament_cmake_python_build_teleop_msgs_egg/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_teleop_msgs_egg.dir/build.make CMakeFiles/ament_cmake_python_build_teleop_msgs_egg.dir/build
-.PHONY : ament_cmake_python_build_teleop_msgs_egg/fast
-
-#=============================================================================
-# Target rules for targets named teleop_msgs__rosidl_generator_py
-
-# Build rule for target.
-teleop_msgs__rosidl_generator_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teleop_msgs__rosidl_generator_py
-.PHONY : teleop_msgs__rosidl_generator_py
-
-# fast build rule for target.
-teleop_msgs__rosidl_generator_py/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build.make CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build
-.PHONY : teleop_msgs__rosidl_generator_py/fast
+teleop_msgs__python/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__python.dir/build.make CMakeFiles/teleop_msgs__python.dir/build
+.PHONY : teleop_msgs__python/fast
 
 #=============================================================================
 # Target rules for targets named teleop_msgs__rosidl_typesupport_fastrtps_c__pyext
@@ -530,7 +504,7 @@ rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.o: rosidl_generator_
 
 # target to build an object file
 rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build.make CMakeFiles/teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__python.dir/build.make CMakeFiles/teleop_msgs__python.dir/rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.o
 .PHONY : rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.o
 
 rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.i: rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.i
@@ -538,7 +512,7 @@ rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.i: rosidl_generator_
 
 # target to preprocess a source file
 rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build.make CMakeFiles/teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__python.dir/build.make CMakeFiles/teleop_msgs__python.dir/rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.i
 .PHONY : rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.i
 
 rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.s: rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.s
@@ -546,7 +520,7 @@ rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.s: rosidl_generator_
 
 # target to generate assembly for a file
 rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build.make CMakeFiles/teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__python.dir/build.make CMakeFiles/teleop_msgs__python.dir/rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.s
 .PHONY : rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data_s.c.s
 
 rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.o: rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.o
@@ -554,7 +528,7 @@ rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.o: rosidl_generator_py/tel
 
 # target to build an object file
 rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build.make CMakeFiles/teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__python.dir/build.make CMakeFiles/teleop_msgs__python.dir/rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.o
 .PHONY : rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.o
 
 rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.i: rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.i
@@ -562,7 +536,7 @@ rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.i: rosidl_generator_py/tel
 
 # target to preprocess a source file
 rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build.make CMakeFiles/teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__python.dir/build.make CMakeFiles/teleop_msgs__python.dir/rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.i
 .PHONY : rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.i
 
 rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.s: rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.s
@@ -570,7 +544,7 @@ rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.s: rosidl_generator_py/tel
 
 # target to generate assembly for a file
 rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__rosidl_generator_py.dir/build.make CMakeFiles/teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_msgs__python.dir/build.make CMakeFiles/teleop_msgs__python.dir/rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.s
 .PHONY : rosidl_generator_py/teleop_msgs/srv/_e_stop_service_s.c.s
 
 rosidl_typesupport_c/teleop_msgs/msg/vehicle_control_data__type_support.o: rosidl_typesupport_c/teleop_msgs/msg/vehicle_control_data__type_support.cpp.o
@@ -874,15 +848,13 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... ament_cmake_python_build_teleop_msgs_egg"
-	@echo "... ament_cmake_python_copy_teleop_msgs"
 	@echo "... teleop_msgs"
 	@echo "... teleop_msgs__cpp"
 	@echo "... teleop_msgs__py"
 	@echo "... teleop_msgs_uninstall"
 	@echo "... uninstall"
+	@echo "... teleop_msgs__python"
 	@echo "... teleop_msgs__rosidl_generator_c"
-	@echo "... teleop_msgs__rosidl_generator_py"
 	@echo "... teleop_msgs__rosidl_typesupport_c"
 	@echo "... teleop_msgs__rosidl_typesupport_c__pyext"
 	@echo "... teleop_msgs__rosidl_typesupport_cpp"

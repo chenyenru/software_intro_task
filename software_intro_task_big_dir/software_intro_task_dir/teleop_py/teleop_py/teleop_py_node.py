@@ -42,8 +42,8 @@ class TeleopPy(Node):
         
     
     def listener_callback(self, msg):
-        self.get_logger().info('I heard "%s"' % msg.axes)
-        self.get_logger().info('I heard "%s"' % msg.buttons)
+        self.get_logger().info('Axes: "%s"' % msg.axes)
+        self.get_logger().info('Buttons: "%s"' % msg.buttons)
         
         vcd = VehicleControlData()
         
@@ -62,18 +62,24 @@ class TeleopPy(Node):
         else:
             vcd.estop = False
 
-        self.get_logger().info('I heard "%d"' % msg.axes[0])
-        self.get_logger().info('I heard "%d"' % msg.axes[1])
-        self.get_logger().info('I heard "%f"' % msg.buttons[0])
-        self.get_logger().info('I heard "%f"' % msg.buttons[1])
+        self.get_logger().info('LEFTX: "%d"' % msg.axes[0])
+        self.get_logger().info('LEFTY: "%d"' % msg.axes[1])
+        # self.get_logger().info('I heard "%f"' % msg.buttons[0])
+        # self.get_logger().info('I heard "%f"' % msg.buttons[1])
         
-        self.get_logger().info('I heard "%f"' % vcd.steering)
-        self.get_logger().info('I heard "%f"' % vcd.brake)
-        self.publisher_.publish(vcd)
 
         if (vcd.estop):
             self.get_logger().info('request sent')
             self.send_request(vcd.estop)
+            vcd.brake = 1000.0
+            vcd.throttle = 0.0
+            vcd.steering = 0.0
+        
+        self.get_logger().info('Steering: "%f"' % vcd.steering)
+        self.get_logger().info('Brake: "%f"' % vcd.brake)
+        
+        self.get_logger().info('Publishing vcd')
+        self.publisher_.publish(vcd)
     
     def send_request(self, estop):
         self.req.set_estop = estop
@@ -100,9 +106,6 @@ def main(args=None):
                 teleop_py.get_logger().info(
                         'Result of EStopService %r' % (response.estop_state))
             break
-
-
-
 
     teleop_py.destroy_node()
     rclpy.shutdown()
