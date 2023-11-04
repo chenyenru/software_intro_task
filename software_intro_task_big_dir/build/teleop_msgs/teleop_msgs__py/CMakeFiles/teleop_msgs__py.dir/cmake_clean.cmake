@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "../rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_c.c"
+  "../rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/teleop_msgs/msg/__init__.py"
   "../rosidl_generator_py/teleop_msgs/msg/_vehicle_control_data.py"

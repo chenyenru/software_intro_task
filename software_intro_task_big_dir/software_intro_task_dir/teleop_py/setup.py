@@ -25,7 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'teleop_py_node_exe = teleop_py.teleop_py_node:main',
-            'service = teleop_py.service_member_function:main',
+            'service = teleop_py.sevice_member_function:main',
         ],
     },
 )

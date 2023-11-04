@@ -1,6 +1,6 @@
 set -e
 
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 
 rm -rf build install log
 

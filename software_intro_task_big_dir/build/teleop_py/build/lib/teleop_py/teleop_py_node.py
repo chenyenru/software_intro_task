@@ -26,7 +26,7 @@ class TeleopPy(Node):
         super().__init__("teleop_py_node")
         self.subsription = self.create_subscription(
             Joy,
-            'joy_messages',
+            'joy',
             self.listener_callback,
             10
         )
@@ -54,34 +54,55 @@ class TeleopPy(Node):
         vcd.steering = msg.axes[1]
         
         # A button
-        vcd.brake = msg.buttons[0]
+        vcd.brake = msg.axes[2]
 
         # B button
-        vcd.estop = msg.buttons[1]
+        if (msg.buttons[1]==1):
+            vcd.estop = True
+        else:
+            vcd.estop = False
 
         self.get_logger().info('I heard "%d"' % msg.axes[0])
         self.get_logger().info('I heard "%d"' % msg.axes[1])
-        self.get_logger().info('I heard "%r"' % msg.buttons[0])
-        self.get_logger().info('I heard "%r"' % msg.buttons[1])
+        self.get_logger().info('I heard "%f"' % msg.buttons[0])
+        self.get_logger().info('I heard "%f"' % msg.buttons[1])
         
+        self.get_logger().info('I heard "%f"' % vcd.steering)
+        self.get_logger().info('I heard "%f"' % vcd.brake)
         self.publisher_.publish(vcd)
 
         if (vcd.estop):
-            self.send_request(estop)
+            self.get_logger().info('request sent')
+            self.send_request(vcd.estop)
     
     def send_request(self, estop):
         self.req.set_estop = estop
         self.future = self.cli.call_async(self.req)
-        rclpy.spin_until_future_complete(self, self.future)
-        return self.future.result()
-
-
-
+        #self.get_logger().info('Spin Until Future Complete function')
+        #rclpy.spin_until_future_complete(self, self.future)
+        #self.get_logger().info('returning future result')
+        #return self.future.result()
         
 def main(args=None):
     rclpy.init(args=args)
     teleop_py = TeleopPy()
-    rclpy.spin(teleop_py)
+    teleop_py.send_request(False)
+    # rclpy.spin(teleop_py)
+
+    while rclpy.ok():
+        rclpy.spin_once(teleop_py)
+        if teleop_py.future.done():
+            try:
+                response = teleop_py.future.result()
+            except Exception as e:
+                teleop_py.get_logger().info('Service call failed %r' % (e,))
+            else:
+                teleop_py.get_logger().info(
+                        'Result of EStopService %r' % (response.estop_state))
+            break
+
+
+
 
     teleop_py.destroy_node()
     rclpy.shutdown()

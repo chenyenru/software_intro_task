@@ -1,0 +1,48 @@
+running egg_info
+creating ../../build/teleop_py/teleop_py.egg-info
+writing ../../build/teleop_py/teleop_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/teleop_py/teleop_py.egg-info/dependency_links.txt
+writing entry points to ../../build/teleop_py/teleop_py.egg-info/entry_points.txt
+writing requirements to ../../build/teleop_py/teleop_py.egg-info/requires.txt
+writing top-level names to ../../build/teleop_py/teleop_py.egg-info/top_level.txt
+writing manifest file '../../build/teleop_py/teleop_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/teleop_py/teleop_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/teleop_py/teleop_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py
+copying teleop_py/teleop_py_node.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py
+copying teleop_py/sevice_member_function.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py
+copying teleop_py/teleop_py.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py
+copying teleop_py/__init__.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py
+copying /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py/teleop_py_node.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py
+copying /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py/sevice_member_function.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py
+copying /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py/teleop_py.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py
+copying /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/build/lib/teleop_py/__init__.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py
+byte-compiling /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py/teleop_py_node.py to teleop_py_node.cpython-310.pyc
+byte-compiling /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py/sevice_member_function.py to sevice_member_function.cpython-310.pyc
+byte-compiling /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py/teleop_py.py to teleop_py.cpython-310.pyc
+byte-compiling /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/ament_index
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/ament_index/resource_index
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/ament_index/resource_index/packages
+copying resource/teleop_py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/teleop_py
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/teleop_py/launch
+copying launch/teleop_py.launch.py -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/teleop_py/launch
+creating /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/teleop_py/param
+copying param/teleop_py.yaml -> /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/share/teleop_py/param
+running install_egg_info
+Copying ../../build/teleop_py/teleop_py.egg-info to /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/python3.10/site-packages/teleop_py-1.0.0-py3.10.egg-info
+running install_scripts
+Installing service script to /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/teleop_py
+Installing teleop_py_node_exe script to /home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/install/teleop_py/lib/teleop_py
+writing list of installed files to '/home/triton-ai/Documents/software_intro_task/software_intro_task_big_dir/build/teleop_py/install.log'
