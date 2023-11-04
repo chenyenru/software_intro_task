@@ -30,10 +30,7 @@ class TeleopPy(Node):
             self.listener_callback,
             10
         )
-
-        self.sub_estop = self.create_subscription(
-
-        )
+        
         self.publisher_ = self.create_publisher(
             VehicleControlData, 
             'output_teleop',
