@@ -37,9 +37,6 @@ struct EStopService_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->throttle = 0.0;
-      this->steering = 0.0;
-      this->brakes = 0.0;
       this->set_estop = false;
     }
   }
@@ -50,46 +47,16 @@ struct EStopService_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->throttle = 0.0;
-      this->steering = 0.0;
-      this->brakes = 0.0;
       this->set_estop = false;
     }
   }
 
   // field types and members
-  using _throttle_type =
-    double;
-  _throttle_type throttle;
-  using _steering_type =
-    double;
-  _steering_type steering;
-  using _brakes_type =
-    double;
-  _brakes_type brakes;
   using _set_estop_type =
     bool;
   _set_estop_type set_estop;
 
   // setters for named parameter idiom
-  Type & set__throttle(
-    const double & _arg)
-  {
-    this->throttle = _arg;
-    return *this;
-  }
-  Type & set__steering(
-    const double & _arg)
-  {
-    this->steering = _arg;
-    return *this;
-  }
-  Type & set__brakes(
-    const double & _arg)
-  {
-    this->brakes = _arg;
-    return *this;
-  }
   Type & set__set_estop(
     const bool & _arg)
   {
@@ -139,15 +106,6 @@ struct EStopService_Request_
   // comparison operators
   bool operator==(const EStopService_Request_ & other) const
   {
-    if (this->throttle != other.throttle) {
-      return false;
-    }
-    if (this->steering != other.steering) {
-      return false;
-    }
-    if (this->brakes != other.brakes) {
-      return false;
-    }
     if (this->set_estop != other.set_estop) {
       return false;
     }

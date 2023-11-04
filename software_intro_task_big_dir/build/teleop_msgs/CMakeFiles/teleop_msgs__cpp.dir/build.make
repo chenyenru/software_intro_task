@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs
+CMAKE_SOURCE_DIR = /home/ubuntu/software_intro_task/software_intro_task_big_dir/software_intro_task/teleop_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs
+CMAKE_BINARY_DIR = /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs
 
 # Utility rule file for teleop_msgs__cpp.
 
@@ -80,8 +80,8 @@ rosidl_generator_cpp/teleop_msgs/msg/vehicle_control_data.hpp: /opt/ros/galactic
 rosidl_generator_cpp/teleop_msgs/msg/vehicle_control_data.hpp: /opt/ros/galactic/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/teleop_msgs/msg/vehicle_control_data.hpp: rosidl_adapter/teleop_msgs/msg/VehicleControlData.idl
 rosidl_generator_cpp/teleop_msgs/msg/vehicle_control_data.hpp: rosidl_adapter/teleop_msgs/srv/EStopService.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/galactic/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/galactic/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/teleop_msgs/msg/detail/vehicle_control_data__builder.hpp: rosidl_generator_cpp/teleop_msgs/msg/vehicle_control_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/teleop_msgs/msg/detail/vehicle_control_data__builder.hpp
@@ -127,6 +127,6 @@ CMakeFiles/teleop_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/teleop_msgs__cpp.dir/clean
 
 CMakeFiles/teleop_msgs__cpp.dir/depend:
-	cd /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs /home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles/teleop_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/software_intro_task/software_intro_task_big_dir/software_intro_task/teleop_msgs /home/ubuntu/software_intro_task/software_intro_task_big_dir/software_intro_task/teleop_msgs /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles/teleop_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/teleop_msgs__cpp.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs
+CMAKE_SOURCE_DIR = /home/ubuntu/software_intro_task/software_intro_task_big_dir/software_intro_task/teleop_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs
+CMAKE_BINARY_DIR = /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs
 
 # Utility rule file for teleop_msgs__py.
 
@@ -78,8 +78,8 @@ rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspecti
 rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c: /opt/ros/galactic/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_adapter/teleop_msgs/msg/VehicleControlData.idl
 rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_adapter/teleop_msgs/srv/EStopService.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py && /usr/bin/python3 /opt/ros/galactic/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py && /usr/bin/python3 /opt/ros/galactic/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_c.c
@@ -121,10 +121,10 @@ teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/build: teleop_msgs__py
 .PHONY : teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/build
 
 teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/clean:
-	cd /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/teleop_msgs__py.dir/cmake_clean.cmake
+	cd /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/teleop_msgs__py.dir/cmake_clean.cmake
 .PHONY : teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/clean
 
 teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/depend:
-	cd /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/software_intro_task_big_dir/software_intro_task/teleop_msgs /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/software_intro_task/software_intro_task_big_dir/software_intro_task/teleop_msgs /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : teleop_msgs__py/CMakeFiles/teleop_msgs__py.dir/depend
 

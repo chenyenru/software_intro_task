@@ -20,9 +20,6 @@ extern "C"
 // Struct defined in srv/EStopService in the package teleop_msgs.
 typedef struct teleop_msgs__srv__EStopService_Request
 {
-  double throttle;
-  double steering;
-  double brakes;
   bool set_estop;
 } teleop_msgs__srv__EStopService_Request;
 

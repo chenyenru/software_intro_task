@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/msg/detail/vehicle_control_data__functions.c
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/msg/detail/vehicle_control_data__functions.c
 teleop_msgs/msg/detail/vehicle_control_data__functions.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/msg/detail/teleop_msgs/msg/detail/vehicle_control_data__functions.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/msg/detail/teleop_msgs/msg/detail/vehicle_control_data__functions.h
 assert.h
 -
 stdbool.h
@@ -18,9 +18,9 @@ stdlib.h
 string.h
 -
 
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/srv/detail/e_stop_service__functions.c
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/srv/detail/e_stop_service__functions.c
 teleop_msgs/srv/detail/e_stop_service__functions.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/srv/detail/teleop_msgs/srv/detail/e_stop_service__functions.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c/teleop_msgs/srv/detail/teleop_msgs/srv/detail/e_stop_service__functions.h
 assert.h
 -
 stdbool.h

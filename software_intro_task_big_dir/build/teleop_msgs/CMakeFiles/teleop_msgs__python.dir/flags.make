@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra -std=gnu99
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -Dteleop_msgs__python_EXPORTS
 
-C_INCLUDES = -I/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c -I/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_typesupport_c -I/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/galactic/include 
+C_INCLUDES = -I/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c -I/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_typesupport_c -I/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/galactic/include 
 

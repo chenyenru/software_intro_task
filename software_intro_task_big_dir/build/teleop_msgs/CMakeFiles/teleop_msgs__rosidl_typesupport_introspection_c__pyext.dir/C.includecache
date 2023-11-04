@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c
 Python.h
 -
 stdbool.h
@@ -14,25 +14,25 @@ stdbool.h
 stdint.h
 -
 rosidl_runtime_c/visibility_control.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/visibility_control.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/visibility_control.h
 rosidl_runtime_c/message_type_support_struct.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/message_type_support_struct.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/service_type_support_struct.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/service_type_support_struct.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/service_type_support_struct.h
 rosidl_runtime_c/action_type_support_struct.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/action_type_support_struct.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/rosidl_runtime_c/action_type_support_struct.h
 teleop_msgs/msg/detail/vehicle_control_data__type_support.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/msg/detail/vehicle_control_data__type_support.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/msg/detail/vehicle_control_data__type_support.h
 teleop_msgs/msg/detail/vehicle_control_data__struct.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/msg/detail/vehicle_control_data__struct.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/msg/detail/vehicle_control_data__struct.h
 teleop_msgs/msg/detail/vehicle_control_data__functions.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/msg/detail/vehicle_control_data__functions.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/msg/detail/vehicle_control_data__functions.h
 teleop_msgs/srv/detail/e_stop_service__type_support.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/srv/detail/e_stop_service__type_support.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/srv/detail/e_stop_service__type_support.h
 teleop_msgs/srv/detail/e_stop_service__struct.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/srv/detail/e_stop_service__struct.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/srv/detail/e_stop_service__struct.h
 teleop_msgs/srv/detail/e_stop_service__functions.h
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/srv/detail/e_stop_service__functions.h
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_py/teleop_msgs/teleop_msgs/srv/detail/e_stop_service__functions.h
 
 /opt/ros/galactic/include/rosidl_runtime_c/action_type_support_struct.h
 rosidl_runtime_c/message_type_support_struct.h

@@ -19,36 +19,6 @@ inline void to_yaml(
   const teleop_msgs::srv::EStopService_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: throttle
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "throttle: ";
-    value_to_yaml(msg.throttle, out);
-    out << "\n";
-  }
-
-  // member: steering
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "steering: ";
-    value_to_yaml(msg.steering, out);
-    out << "\n";
-  }
-
-  // member: brakes
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "brakes: ";
-    value_to_yaml(msg.brakes, out);
-    out << "\n";
-  }
-
   // member: set_estop
   {
     if (indentation > 0) {

@@ -1,10 +1,10 @@
 {
   "package_name": "teleop_msgs",
-  "output_dir": "/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_cpp/teleop_msgs",
+  "output_dir": "/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_cpp/teleop_msgs",
   "template_dir": "/opt/ros/galactic/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:msg/VehicleControlData.idl",
-    "/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:srv/EStopService.idl"
+    "/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:msg/VehicleControlData.idl",
+    "/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:srv/EStopService.idl"
   ],
   "target_dependencies": [
     "/opt/ros/galactic/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -22,7 +22,7 @@
     "/opt/ros/galactic/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/galactic/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/galactic/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs/msg/VehicleControlData.idl",
-    "/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs/srv/EStopService.idl"
+    "/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs/msg/VehicleControlData.idl",
+    "/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs/srv/EStopService.idl"
   ]
 }

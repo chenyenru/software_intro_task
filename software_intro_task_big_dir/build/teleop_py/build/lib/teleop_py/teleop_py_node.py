@@ -30,30 +30,53 @@ class TeleopPy(Node):
             self.listener_callback,
             10
         )
-
         self.publisher_ = self.create_publisher(
             VehicleControlData, 
             'output_teleop',
             10)
-        timer_period = 0.5
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+
+        self.cli = self.create_client(EStopService, "estop_service")
+        self.req = EStopService.Request()
+        
 
         
     
     def listener_callback(self, msg):
         self.get_logger().info('I heard "%s"' % msg.axes)
         self.get_logger().info('I heard "%s"' % msg.buttons)
+        
+        vcd = VehicleControlData()
+        
+        # LEFTX
+        vcd.throttle = msg.axes[0]
 
-    def timer_callback(self):
-        # Setting up the messages here
-        msg = VehicleControlData()
-        msg.throttle = 1.2
-        msg.steering = 1.2
-        msg.brakes = 1.2
-        msg.estop = True
+        # LEFTY
+        vcd.steering = msg.axes[1]
+        
+        # A button
+        vcd.brake = msg.buttons[0]
 
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        # B button
+        vcd.estop = msg.buttons[1]
+
+        self.get_logger().info('I heard "%d"' % msg.axes[0])
+        self.get_logger().info('I heard "%d"' % msg.axes[1])
+        self.get_logger().info('I heard "%r"' % msg.buttons[0])
+        self.get_logger().info('I heard "%r"' % msg.buttons[1])
+        
+        self.publisher_.publish(vcd)
+
+        if (vcd.estop):
+            self.send_request(estop)
+    
+    def send_request(self, estop):
+        self.req.set_estop = estop
+        self.future = self.cli.call_async(self.req)
+        rclpy.spin_until_future_complete(self, self.future)
+        return self.future.result()
+
+
+
         
 def main(args=None):
     rclpy.init(args=args)

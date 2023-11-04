@@ -53,23 +53,14 @@ class EStopService_Request(metaclass=Metaclass_EStopService_Request):
     """Message class 'EStopService_Request'."""
 
     __slots__ = [
-        '_throttle',
-        '_steering',
-        '_brakes',
         '_set_estop',
     ]
 
     _fields_and_field_types = {
-        'throttle': 'double',
-        'steering': 'double',
-        'brakes': 'double',
         'set_estop': 'boolean',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
@@ -77,9 +68,6 @@ class EStopService_Request(metaclass=Metaclass_EStopService_Request):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.throttle = kwargs.get('throttle', float())
-        self.steering = kwargs.get('steering', float())
-        self.brakes = kwargs.get('brakes', float())
         self.set_estop = kwargs.get('set_estop', bool())
 
     def __repr__(self):
@@ -111,12 +99,6 @@ class EStopService_Request(metaclass=Metaclass_EStopService_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.throttle != other.throttle:
-            return False
-        if self.steering != other.steering:
-            return False
-        if self.brakes != other.brakes:
-            return False
         if self.set_estop != other.set_estop:
             return False
         return True
@@ -125,45 +107,6 @@ class EStopService_Request(metaclass=Metaclass_EStopService_Request):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
-
-    @property
-    def throttle(self):
-        """Message field 'throttle'."""
-        return self._throttle
-
-    @throttle.setter
-    def throttle(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'throttle' field must be of type 'float'"
-        self._throttle = value
-
-    @property
-    def steering(self):
-        """Message field 'steering'."""
-        return self._steering
-
-    @steering.setter
-    def steering(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'steering' field must be of type 'float'"
-        self._steering = value
-
-    @property
-    def brakes(self):
-        """Message field 'brakes'."""
-        return self._brakes
-
-    @brakes.setter
-    def brakes(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'brakes' field must be of type 'float'"
-        self._brakes = value
 
     @property
     def set_estop(self):

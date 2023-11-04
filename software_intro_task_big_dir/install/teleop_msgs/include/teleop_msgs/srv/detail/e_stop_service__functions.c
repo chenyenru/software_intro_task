@@ -14,9 +14,6 @@ teleop_msgs__srv__EStopService_Request__init(teleop_msgs__srv__EStopService_Requ
   if (!msg) {
     return false;
   }
-  // throttle
-  // steering
-  // brakes
   // set_estop
   return true;
 }
@@ -27,9 +24,6 @@ teleop_msgs__srv__EStopService_Request__fini(teleop_msgs__srv__EStopService_Requ
   if (!msg) {
     return;
   }
-  // throttle
-  // steering
-  // brakes
   // set_estop
 }
 
@@ -37,18 +31,6 @@ bool
 teleop_msgs__srv__EStopService_Request__are_equal(const teleop_msgs__srv__EStopService_Request * lhs, const teleop_msgs__srv__EStopService_Request * rhs)
 {
   if (!lhs || !rhs) {
-    return false;
-  }
-  // throttle
-  if (lhs->throttle != rhs->throttle) {
-    return false;
-  }
-  // steering
-  if (lhs->steering != rhs->steering) {
-    return false;
-  }
-  // brakes
-  if (lhs->brakes != rhs->brakes) {
     return false;
   }
   // set_estop
@@ -66,12 +48,6 @@ teleop_msgs__srv__EStopService_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // throttle
-  output->throttle = input->throttle;
-  // steering
-  output->steering = input->steering;
-  // brakes
-  output->brakes = input->brakes;
   // set_estop
   output->set_estop = input->set_estop;
   return true;

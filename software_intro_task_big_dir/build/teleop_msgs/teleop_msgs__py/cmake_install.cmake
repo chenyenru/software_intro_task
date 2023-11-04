@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py
+# Install script for directory: /home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/teleop_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/software_intro_task_big_dir/install/teleop_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/software_intro_task/software_intro_task_big_dir/install/teleop_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

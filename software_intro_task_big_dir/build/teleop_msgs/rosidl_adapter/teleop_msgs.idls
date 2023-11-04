@@ -1,2 +1,2 @@
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:msg/VehicleControlData.idl
-/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:srv/EStopService.idl
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:msg/VehicleControlData.idl
+/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_adapter/teleop_msgs:srv/EStopService.idl

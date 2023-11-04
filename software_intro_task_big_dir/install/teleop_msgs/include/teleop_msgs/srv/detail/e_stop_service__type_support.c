@@ -31,52 +31,7 @@ void EStopService_Request__rosidl_typesupport_introspection_c__EStopService_Requ
   teleop_msgs__srv__EStopService_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember EStopService_Request__rosidl_typesupport_introspection_c__EStopService_Request_message_member_array[4] = {
-  {
-    "throttle",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(teleop_msgs__srv__EStopService_Request, throttle),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "steering",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(teleop_msgs__srv__EStopService_Request, steering),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "brakes",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(teleop_msgs__srv__EStopService_Request, brakes),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
+static rosidl_typesupport_introspection_c__MessageMember EStopService_Request__rosidl_typesupport_introspection_c__EStopService_Request_message_member_array[1] = {
   {
     "set_estop",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -97,7 +52,7 @@ static rosidl_typesupport_introspection_c__MessageMember EStopService_Request__r
 static const rosidl_typesupport_introspection_c__MessageMembers EStopService_Request__rosidl_typesupport_introspection_c__EStopService_Request_message_members = {
   "teleop_msgs__srv",  // message namespace
   "EStopService_Request",  // message name
-  4,  // number of fields
+  1,  // number of fields
   sizeof(teleop_msgs__srv__EStopService_Request),
   EStopService_Request__rosidl_typesupport_introspection_c__EStopService_Request_message_member_array,  // message members
   EStopService_Request__rosidl_typesupport_introspection_c__EStopService_Request_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -std=gnu11
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -Dteleop_msgs__rosidl_generator_c_EXPORTS
 
-C_INCLUDES = -I/home/ubuntu/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c -isystem /opt/ros/galactic/include 
+C_INCLUDES = -I/home/ubuntu/software_intro_task/software_intro_task_big_dir/build/teleop_msgs/rosidl_generator_c -isystem /opt/ros/galactic/include 
 

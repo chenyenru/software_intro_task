@@ -6,12 +6,6 @@
 module teleop_msgs {
   module srv {
     struct EStopService_Request {
-      double throttle;
-
-      double steering;
-
-      double brakes;
-
       boolean set_estop;
     };
     struct EStopService_Response {

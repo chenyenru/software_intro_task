@@ -50,33 +50,6 @@ bool teleop_msgs__srv__e_stop_service__request__convert_from_py(PyObject * _pyms
     assert(strncmp("teleop_msgs.srv._e_stop_service.EStopService_Request", full_classname_dest, 52) == 0);
   }
   teleop_msgs__srv__EStopService_Request * ros_message = _ros_message;
-  {  // throttle
-    PyObject * field = PyObject_GetAttrString(_pymsg, "throttle");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->throttle = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // steering
-    PyObject * field = PyObject_GetAttrString(_pymsg, "steering");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->steering = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // brakes
-    PyObject * field = PyObject_GetAttrString(_pymsg, "brakes");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->brakes = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
   {  // set_estop
     PyObject * field = PyObject_GetAttrString(_pymsg, "set_estop");
     if (!field) {
@@ -108,39 +81,6 @@ PyObject * teleop_msgs__srv__e_stop_service__request__convert_to_py(void * raw_r
     }
   }
   teleop_msgs__srv__EStopService_Request * ros_message = (teleop_msgs__srv__EStopService_Request *)raw_ros_message;
-  {  // throttle
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->throttle);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "throttle", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // steering
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->steering);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "steering", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // brakes
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->brakes);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "brakes", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
   {  // set_estop
     PyObject * field = NULL;
     field = PyBool_FromLong(ros_message->set_estop ? 1 : 0);
