@@ -30,7 +30,7 @@ class TeleopPy(Node):
             self.listener_callback,
             10
         )
-        
+
         self.publisher_ = self.create_publisher(
             VehicleControlData, 
             'output_teleop',
@@ -54,7 +54,7 @@ class TeleopPy(Node):
         # LEFTY
         vcd.steering = msg.axes[1]
         
-        # A button
+        # RightX
         vcd.brake = msg.axes[2]
 
         # B button
